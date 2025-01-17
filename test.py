@@ -12,9 +12,7 @@ custom_config = r'--oem 3 --psm 6 -l ita'
 # Extract text
 text = pytesseract.image_to_string(first_page, config=custom_config)
 
-# Print first 500 characters to see what we got
-print("First 500 characters of extracted text:")
-print(text[:500])
+print(text)
 
 # Also print Tesseract version to confirm we're on v5
 print("\nTesseract Version:")
